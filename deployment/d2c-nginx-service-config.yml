@@ -1,0 +1,15 @@
+initial-service-host: "hetzner-eu-02"
+d2c-service-config:
+  type: "nginx"
+  version: "1.19"
+  remoteAccess: false
+  services:
+    - name: "utils-php"
+      type: "custom"
+      file: "./deployment/nginx/nginx.conf"
+  name: "utils"
+  description: "Service utils nginx"
+  project: "Utils"
+  ports:
+    - value: 80
+      protocol: "TCP"
