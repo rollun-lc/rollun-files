@@ -52,8 +52,7 @@
   },
   "autoload": {
     "psr-4": {
-      "App\\": "src/App",
-      "Files\\": "src/Files/src"
+      "rollun\\files\\": "src/Files/src"
     }
   },
   "autoload-dev": {
