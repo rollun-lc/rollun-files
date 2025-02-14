@@ -53,7 +53,7 @@
   "autoload": {
     "psr-4": {
       "App\\": "src/App",
-      "Log\\": "src/Log/src"
+      "Files\\": "src/Files/src"
     }
   },
   "autoload-dev": {
