@@ -2,7 +2,7 @@ services:
   nginx:
     build:
       context: docker/nginx
-      dockerfile: docker/nginx/Dockerfile
+      dockerfile: Dockerfile
     volumes:
       - ./:/var/www/app
     ports:
@@ -13,7 +13,7 @@ services:
   php-fpm:
     build:
       context: docker/php-fpm
-      dockerfile: docker/php-fpm/Dockerfile
+      dockerfile: Dockerfile
     volumes:
       - ./:/var/www/app
     environment:
