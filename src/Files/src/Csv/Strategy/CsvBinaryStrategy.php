@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Files\Csv\Strategy;
+namespace rollun\files\Csv\Strategy;
 
 use InvalidArgumentException;
-use Files\Csv\CsvFileObjectWithPrKey;
-use Files\FileObject as RollunFileObject;
+use rollun\files\Csv\CsvFileObjectWithPrKey;
+use rollun\files\FileObject as RollunFileObject;
 
 /**
  * Class CsvBinaryStrategy

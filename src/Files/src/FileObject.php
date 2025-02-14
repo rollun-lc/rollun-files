@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Files;
+namespace rollun\files;
 
 use Ajgl\Csv\Rfc\Spl\SplFileObject as Base;
 use Ajgl\Csv\Rfc\CsvRfcUtils;

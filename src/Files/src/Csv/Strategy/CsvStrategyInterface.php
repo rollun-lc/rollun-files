@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Files\Csv\Strategy;
+namespace rollun\files\Csv\Strategy;
 
-use Files\Csv\CsvFileObjectWithPrKey;
+use rollun\files\Csv\CsvFileObjectWithPrKey;
 
 /**
  * Class CsvStrategyInterface

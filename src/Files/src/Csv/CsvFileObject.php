@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Files\Csv;
+namespace rollun\files\Csv;
 
 use InvalidArgumentException;
 use rollun\utils\Json\Exception as RollunException;
 use rollun\utils\Json\Serializer;
 use SplFileObject;
-use Files\FileObject as BaseFileObject;
+use rollun\files\FileObject as BaseFileObject;
 
 /**
  * Class CsvFileObject

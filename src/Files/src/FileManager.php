@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Files;
+namespace rollun\files;
 
 use Exception;
 use RuntimeException;
