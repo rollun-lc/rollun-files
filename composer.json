@@ -1,8 +1,7 @@
 {
-  "name": "rollun-com/laminas-skeleton",
-  "description": "Rollun Laminas skeleton. Begin developing PSR-15 middleware applications in seconds!",
-  "type": "project",
-  "homepage": "https://github.com/mezzio/mezzio-skeleton",
+  "name": "rollun-com/rollun-files",
+  "description": "For work with Csv files",
+  "type": "library",
   "license": "BSD-3-Clause",
   "keywords": [
     "skeleton",
@@ -27,6 +26,7 @@
     "source": "https://github.com/mezzio/mezzio-skeleton"
   },
   "require": {
+    "ajgl/csv-rfc": "^0.4.0",
     "php": "^8.0",
     "guzzlehttp/guzzle": "^6.5",
     "laminas/laminas-component-installer": "^2.6",
