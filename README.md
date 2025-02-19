@@ -1,5 +1,9 @@
 # rollun-files
 
+## Installation
+
+``composer require rollun-com/rollun-utils``
+
 ## Опис
 
 Представляє собою бібліотеку для розширеного управління файловою системою, з особливим акцентом на роботу з CSV‑файлами. Його функціональність включає:
@@ -31,7 +35,53 @@
 
 Таким чином, бібліотека об’єднує функціонал для надійного та ефективного управління звичайними файлами, а також для детальної роботи з CSV‑даними. Він підходить для сценаріїв, де потрібні не лише операції читання/запису файлів, а й складне редагування їх вмісту з забезпеченням безпеки та конкурентного доступу.
 
+## Usage
 
-## Getting started
+```php
+use rollun\files\Csv\CsvFileObjectWithPrKey;
 
-Інструкція по налаштуванню сервісу і початку роботи з ним: [docs/getting_started.md](docs/getting_started.md)
+$filename = 'data.csv';
+/* 
+* id,name,age
+* 123,Ivan,25
+*/
+
+$csv = new CsvFileObjectWithPrKey(
+    $filename,
+    ',',
+    '"',
+    '\\',
+    CsvBinaryStrategy::class,
+    'id'
+);
+
+$row = $csv->getRowById("123"); // 123,Ivan,25
+
+$newRow = [
+    "id"   => "456",
+    "name" => "John Doe",
+    "age"  => "30",
+];
+$csv->addRow($newRow); // add row to csv
+/*
+ * id,name,age
+ * 123,Ivan,25
+ * 456,John Doe,30
+ */
+
+$updatedRow = [
+    "id"   => "456",
+    "name" => "John Smith",
+    "age"  => "31",
+];
+$csv->setRow($updatedRow); // update row with id 456
+/*
+ * id,name,age
+ * 123,Ivan,25
+ * 456,John Smith,31
+ */
+```
+
+## Contributing
+
+[docs/contributing.md](docs/contributing.md)
