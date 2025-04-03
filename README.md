@@ -2,7 +2,7 @@
 
 ## Installation
 
-``composer require rollun-com/rollun-utils``
+``composer require rollun-com/rollun-files``
 
 ## Опис
 
